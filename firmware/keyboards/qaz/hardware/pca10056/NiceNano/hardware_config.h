@@ -27,8 +27,29 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 7
 
-#define MATRIX_ROW_PINS { 17, 22, 24, 11, 17, 20 }
-#define MATRIX_COL_PINS { 36, 6, 8, 29, 38, 2, 32 }
+#define D3      6  
+        #define D2      8   
+        #define D1      17 
+        #define D0      20  
+        #define D4      22
+        #define C6      24
+        #define D7      32
+        #define E6      11
+        #define B4      36
+        #define B5      38 //1.06 = 32+6
+
+        #define F4      31
+        #define F5      29  
+        #define F6      2
+        #define F7      47
+        #define B1      45 //1.13  = 32+13
+        #define B3      43
+        #define B2      10
+        #define B6      9 //1.11 = 32+11
+        #define NC      32 //1.00 = 32+0 // NC is for not connected....
+
+#define MATRIX_ROW_PINS { F4, D4, C6, E6, D1, D0 }
+#define MATRIX_COL_PINS { B4, D3, D2, F5, B5, F6, D7 }
 #define UNUSED_PINS {}
 
 #define BACKLIGHT_PWM_ON 0
@@ -44,24 +65,5 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
         #define VBAT_PIN  4
         #define VCC_PIN 13
         #define VCC_POLARITY_ON 0
-   /*     #define D3      6  
-        #define D2      8   
-        #define D1      15  
-        #define D0      17  
-        #define D4      20
-        #define C6      13
-        #define D7      24
-        #define E6      9
-        #define B4      10
-        #define B5      38 //1.06 = 32+6
-
-        #define F4      30
-        #define F5      26  
-        #define F6      29
-        #define F7      2
-        #define B1      45 //1.13  = 32+13
-        #define B3      3
-        #define B2      28
-        #define B6      43 //1.11 = 32+11
-        #define NC      32 //1.00 = 32+0 // NC is for not connected....*/
+ 
 #endif /* HARDWARE_CONFIG_H */

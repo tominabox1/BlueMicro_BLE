@@ -12,13 +12,12 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #include "keymap.h"
 
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
-    {{
-        {KC_7,    KC_8,    KC_9,    KC_KP_SLASH, KC_7,    KC_8,    KC_9,    KC_7, KC_7,    KC_8,},
-        {KC_7,    KC_8,    KC_9,    KC_KP_SLASH, KC_7,    KC_8,    KC_9,    KC_7, KC_7,    KC_8,},
-        {KC_7,    KC_8,    KC_9,    KC_KP_SLASH, KC_7,    KC_8,    KC_9,    KC_7, KC_7,},
-        {KC_0,    KC_0,    KC_7,    KC_7,        KC_7,    KC_7,    KC_7,    KC_7}
-    }};
-
+     KEYMAP2ARRAY(KEYMAP(
+        RGB_TOG,RGB_MOD,    KC_9,    KC_KP_SLASH, KC_7,    KC_8,    KC_9,    KC_7, DFU,    CLEAR_BONDS,
+        KC_7,    KC_8,    KC_9,    KC_KP_SLASH, KC_7,    KC_8,    KC_9,    KC_7, KC_7,    KC_8,
+        KC_7,    KC_8,    KC_9,    KC_KP_SLASH, KC_7,    KC_8,    KC_9,    KC_7, KC_7,
+        KC_0,    KC_0,    KC_7,    KC_7, KC_7,       KC_7,    KC_7,    KC_7
+     ));
  
 void setupKeymap() {
 ;
